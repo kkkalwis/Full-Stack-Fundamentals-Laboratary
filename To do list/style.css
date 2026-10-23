@@ -1,0 +1,68 @@
+body {
+  background-color: #f4f6fa;
+  min-height: 100vh;
+}
+
+.app-card {
+  border-radius: 14px;
+}
+ 
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  transition: background-color 0.15s ease;
+}
+ 
+.task-item:hover {
+  background-color: #f8f9fc;
+}
+ 
+.task-item .form-check-input {
+  flex-shrink: 0;
+  margin-top: 0;
+  cursor: pointer;
+}
+ 
+.task-text {
+  flex-grow: 1;
+  min-width: 0;                
+  word-break: break-word;
+  cursor: pointer;
+  user-select: none;
+}
+ 
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #8a909c;
+}
+ 
+
+.task-item .btn {
+  flex-shrink: 0;
+}
+ 
+.filter-btn {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+ 
+
+@media (max-width: 575.98px) {
+  .app-card .card-body {
+    padding: 1rem;
+  }
+ 
+  h1.h3 {
+    font-size: 1.35rem;
+  }
+ 
+  .task-item {
+    padding: 0.55rem 0.65rem;
+    gap: 0.5rem;
+  }
+}
+ 
+
